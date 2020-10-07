@@ -137,4 +137,9 @@ public class MainActivity extends AppCompatActivity  {
             intent.putExtra(EXTRA_MESSAGE, "test");
         startActivity(intent);
     }
+    public void launchGraphActivity(View v){
+        Intent intent = new Intent(this, GraphActivity.class);
+        intent.putExtra(EXTRA_MESSAGE, "test");
+        startActivity(intent);
+    }
 }
