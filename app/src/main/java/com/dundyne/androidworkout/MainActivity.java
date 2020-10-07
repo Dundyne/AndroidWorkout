@@ -2,6 +2,7 @@ package com.dundyne.androidworkout;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.CountDownTimer;
@@ -20,6 +21,8 @@ public class MainActivity extends AppCompatActivity  {
     TextView textView;
     VideoView vid;
     MediaController m;
+    public static final String EXTRA_MESSAGE =
+            "com.dundyne.androidworkout.extra.MESSAGE";
 
     //** Stopwatch variables **//
     private int seconds = 0;
@@ -127,5 +130,11 @@ public class MainActivity extends AppCompatActivity  {
         vid.setVideoURI(u);
 
         vid.start();
+    }
+
+        public void launchSecondActivity(View v){
+        Intent intent = new Intent(this, SecondActivity.class);
+            intent.putExtra(EXTRA_MESSAGE, "test");
+        startActivity(intent);
     }
 }
