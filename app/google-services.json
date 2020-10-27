@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "662283996180",
+    "firebase_url": "https://androidworkout-cd7da.firebaseio.com",
+    "project_id": "androidworkout-cd7da",
+    "storage_bucket": "androidworkout-cd7da.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:662283996180:android:8a790d2aa91a067b6aeb01",
+        "android_client_info": {
+          "package_name": "com.dundyne.androidworkout"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "662283996180-rhr6nkg31u5om4m5rkn4df7gs4hvpjv3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dundyne.androidworkout",
+            "certificate_hash": "87a4b47e07b8abeb754108880552d8cb8bf4dd08"
+          }
+        },
+        {
+          "client_id": "662283996180-p3mpbroo80bhtt0omel6e7hqlh9l3rvd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAQjQFhG82eQsoVE4Ayn55lbgXf8c-l0eU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "662283996180-p3mpbroo80bhtt0omel6e7hqlh9l3rvd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
