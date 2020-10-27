@@ -100,4 +100,13 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="loginActivity"
+        android:text="LoginPage"
+        tools:layout_editor_absoluteX="162dp"
+        tools:layout_editor_absoluteY="670dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

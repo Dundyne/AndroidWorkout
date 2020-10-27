@@ -10,7 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".GraphActivity"
-            android:label = "Graph Activity"
+        android:label = "Graph Activity"
+        android:parentActivityName=".MainActivity">
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=
+                "com.dundyne.androidworkout.MainActivity" />
+    </activity>
+        <activity android:name=".LoginActivity"
+            android:label = "Login Activity"
             android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
