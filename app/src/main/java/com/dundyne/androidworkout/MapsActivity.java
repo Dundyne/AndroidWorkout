@@ -54,7 +54,6 @@ public class MapsActivity extends AppCompatActivity {
     }
 
 
-
     @SuppressLint("MissingPermission")
     private void getLocation(){
         fusedLocationProviderClient.getLastLocation().addOnCompleteListener(new OnCompleteListener<Location>() {
