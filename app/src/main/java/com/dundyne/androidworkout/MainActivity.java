@@ -139,7 +139,7 @@ public class MainActivity extends AppCompatActivity  {
     }
 
         public void loginActivity(View v){
-        Intent intent = new Intent(this, LoginActivity.class);
+        Intent intent = new Intent(this, MapsActivity.class);
         startActivity(intent);
     }
 
