@@ -67,7 +67,7 @@ public class LoginActivity extends AppCompatActivity {
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == RC_SIGN_IN)
-
+                return;
 
             if (resultCode == RESULT_OK) {
                 // Successfully signed in
