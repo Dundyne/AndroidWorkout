@@ -19,6 +19,7 @@ public class ExerciseActivity extends AppCompatActivity {
     TextView textViewStored;
     Boolean isRunning = false;
     Integer storeTime;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
