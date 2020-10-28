@@ -139,7 +139,11 @@ public class MainActivity extends AppCompatActivity  {
     }
 
         public void loginActivity(View v){
+<<<<<<< Updated upstream
         Intent intent = new Intent(this, MapsActivity.class);
+=======
+        Intent intent = new Intent(this, ExerciseActivity.class);
+>>>>>>> Stashed changes
         startActivity(intent);
     }
 
