@@ -2,6 +2,8 @@ package com.dundyne.androidworkout;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
+import android.content.SharedPreferences;
 import android.media.MediaPlayer;
 import android.net.Uri;
 import android.os.Bundle;
@@ -19,6 +21,9 @@ public class ExerciseActivity extends AppCompatActivity {
     TextView textViewStored;
     Boolean isRunning = false;
     Integer storeTime;
+
+    TinyDB tinydb = new TinyDB(ExerciseActivity.this);
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
