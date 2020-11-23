@@ -13,25 +13,30 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.VideoView;
 
+import java.util.ArrayList;
+
 public class ExerciseActivity extends AppCompatActivity {
     VideoView videoView;
     Button btnTimer;
     CountDownTimer countDownTimer;
     TextView textViewTimer;
     TextView textViewStored;
+    TextView testView;
     Boolean isRunning = false;
     Integer storeTime;
 
-    TinyDB tinydb = new TinyDB(ExerciseActivity.this);
+    TinyDB tinydb;
 
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_exercise);
+        tinydb = new TinyDB(getApplicationContext());
         videoView = (VideoView)findViewById(R.id.videoViewExercise);
         btnTimer = findViewById(R.id.btnStart);
         textViewTimer = findViewById(R.id.textViewTimer);
+        testView = findViewById(R.id.testView);
         textViewStored = findViewById(R.id.textViewStored);
         videoView.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
             @Override
@@ -51,6 +56,8 @@ public class ExerciseActivity extends AppCompatActivity {
                 storeTime = 60 - Integer.parseInt(textViewTimer.getText().toString());
                 textViewStored.setText("You lasted: " + storeTime.toString() + " seconds!");
                 textViewTimer.setText("1:00");
+                saveToSharedPreferences();
+
             }
         };
 
@@ -60,6 +67,30 @@ public class ExerciseActivity extends AppCompatActivity {
         videoView.setVideoURI(u);
         videoView.requestFocus();
         videoView.start();
+    }
+
+    public void printProgress(){
+        if(!tinydb.getListInt("pushup").isEmpty()){
+        ArrayList<Integer> progress = tinydb.getListInt("pushup");
+        testView.setText(progress.toString());}
+        else {
+            testView.setText("empty");
+        }
+    }
+
+    public void saveToSharedPreferences(){
+        if(tinydb.getListInt("pushup").isEmpty()){
+            ArrayList<Integer> progress = new ArrayList<>();
+            progress.add(storeTime);
+            tinydb.putListInt("pushup", progress);
+        }
+        else {
+            ArrayList<Integer> progress = tinydb.getListInt("pushup");
+            progress.add(storeTime);
+            tinydb.putListInt("pushup", progress);
+        }
+        printProgress();
+
     }
 
     public void startStopTimer(View v){
@@ -75,6 +106,7 @@ public class ExerciseActivity extends AppCompatActivity {
             textViewStored.setText("You lasted: " + storeTime.toString() + " seconds!");
             textViewTimer.setText("1:00");
             isRunning = false;
+            saveToSharedPreferences();
         }
     }
 
