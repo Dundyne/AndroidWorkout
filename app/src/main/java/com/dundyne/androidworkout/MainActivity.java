@@ -1,19 +1,19 @@
 package com.dundyne.androidworkout;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
-import android.os.CountDownTimer;
-import android.os.Handler;
 import android.view.View;
 import android.widget.Button;
 import android.widget.MediaController;
 import android.widget.TextView;
 import android.widget.VideoView;
 
-import java.util.Locale;
+//TODO
+// 1. Få på plass lagring
+// 2. Legge til darkmode i settings
+// 3. Lage en overview page som du kan se resultater, hvor treninger har funnet sted osv.
+
 
 public class MainActivity extends AppCompatActivity  {
     public int counter;
@@ -48,6 +48,11 @@ public class MainActivity extends AppCompatActivity  {
 
     public void settingsActivity(View v){
         Intent intent = new Intent(this, SettingsActivity.class);
+        startActivity(intent);
+    }
+
+    public void mapsActivity(View v){
+        Intent intent = new Intent(this, MapsActivity.class);
         startActivity(intent);
     }
 
