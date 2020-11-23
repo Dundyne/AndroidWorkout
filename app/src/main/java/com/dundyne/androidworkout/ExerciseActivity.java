@@ -15,6 +15,8 @@ import android.widget.VideoView;
 
 import java.util.ArrayList;
 
+import sharefirebasepreferences.crysxd.de.lib.SharedFirebasePreferences;
+
 public class ExerciseActivity extends AppCompatActivity {
     VideoView videoView;
     Button btnTimer;
@@ -72,7 +74,8 @@ public class ExerciseActivity extends AppCompatActivity {
     public void printProgress(){
         if(!tinydb.getListInt("pushup").isEmpty()){
         ArrayList<Integer> progress = tinydb.getListInt("pushup");
-        testView.setText(progress.toString());}
+        testView.setText(progress.toString());
+        }
         else {
             testView.setText("empty");
         }
