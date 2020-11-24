@@ -21,10 +21,6 @@ public class SettingsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
 
-
-
-
-
         setContentView(R.layout.settings_activity);
         getSupportFragmentManager()
                 .beginTransaction()
@@ -50,11 +46,13 @@ public class SettingsActivity extends AppCompatActivity {
 
                         public boolean onPreferenceChange(Preference preference, Object newValue) {
                             if (newValue.toString().equals("true")) {
-                                Log.d("myTag", "dette den er huket på true!");
+                                Log.d("TrueTag", "dette den er huket på true!");
+                              //setter appen til dark mode
                                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
                             } else {
                               Log.d("FalseTag", "den er huket på false");
-                                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
+                              //setter appen til light mode
+                              AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
                             }
                             return true;
                         }

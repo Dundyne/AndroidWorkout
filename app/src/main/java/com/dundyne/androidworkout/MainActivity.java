@@ -56,6 +56,11 @@ public class MainActivity extends AppCompatActivity  {
         startActivity(intent);
     }
 
+    public void youtubeActivity(View v){
+        Intent intent = new Intent(this, YoutubeActivity.class);
+        startActivity(intent);
+    }
+
     public void launchGraphActivity(View v){
         Intent intent = new Intent(this, GraphActivity.class);
         intent.putExtra(EXTRA_MESSAGE, "test");
