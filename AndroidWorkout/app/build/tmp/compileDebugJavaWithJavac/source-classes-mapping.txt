@@ -1,0 +1,37 @@
+com/dundyne/androidworkout/dataHandler/TinyDB.java
+ com.dundyne.androidworkout.dataHandler.TinyDB
+com/dundyne/androidworkout/YoutubeActivity.java
+ com.dundyne.androidworkout.YoutubeActivity
+ com.dundyne.androidworkout.YoutubeActivity$1
+ com.dundyne.androidworkout.YoutubeActivity$2
+com/dundyne/androidworkout/BuildConfig.java
+ com.dundyne.androidworkout.BuildConfig
+com/dundyne/androidworkout/ExerciseActivity.java
+ com.dundyne.androidworkout.ExerciseActivity
+ com.dundyne.androidworkout.ExerciseActivity$1
+ com.dundyne.androidworkout.ExerciseActivity$2
+com/dundyne/androidworkout/SecondActivity.java
+ com.dundyne.androidworkout.SecondActivity
+ com.dundyne.androidworkout.SecondActivity$SpinnerActivity
+com/dundyne/androidworkout/SettingsActivity.java
+ com.dundyne.androidworkout.SettingsActivity
+ com.dundyne.androidworkout.SettingsActivity$SettingsFragment
+ com.dundyne.androidworkout.SettingsActivity$SettingsFragment$1
+com/dundyne/androidworkout/exercises/RepetitiveExercise.java
+ com.dundyne.androidworkout.exercises.RepetitiveExercise
+com/dundyne/androidworkout/LoginActivity.java
+ com.dundyne.androidworkout.LoginActivity
+ com.dundyne.androidworkout.LoginActivity$1
+com/dundyne/androidworkout/exercises/StaticExercise.java
+ com.dundyne.androidworkout.exercises.StaticExercise
+com/dundyne/androidworkout/MainActivity.java
+ com.dundyne.androidworkout.MainActivity
+com/dundyne/androidworkout/YoutubeConfig.java
+ com.dundyne.androidworkout.YoutubeConfig
+com/dundyne/androidworkout/MapsActivity.java
+ com.dundyne.androidworkout.MapsActivity
+ com.dundyne.androidworkout.MapsActivity$1
+ com.dundyne.androidworkout.MapsActivity$2
+com/dundyne/androidworkout/GraphActivity.java
+ com.dundyne.androidworkout.GraphActivity
+ com.dundyne.androidworkout.GraphActivity$SpinnerActivity

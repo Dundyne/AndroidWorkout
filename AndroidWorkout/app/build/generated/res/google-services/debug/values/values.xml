@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">662283996180-p3mpbroo80bhtt0omel6e7hqlh9l3rvd.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://androidworkout-cd7da.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">662283996180</string>
+    <string name="google_api_key" translatable="false">AIzaSyAQjQFhG82eQsoVE4Ayn55lbgXf8c-l0eU</string>
+    <string name="google_app_id" translatable="false">1:662283996180:android:8a790d2aa91a067b6aeb01</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyAQjQFhG82eQsoVE4Ayn55lbgXf8c-l0eU</string>
+    <string name="google_storage_bucket" translatable="false">androidworkout-cd7da.appspot.com</string>
+    <string name="project_id" translatable="false">androidworkout-cd7da</string>
+</resources>
