@@ -54,7 +54,7 @@ public class MapsActivity extends AppCompatActivity {
     }
 
 
-    @SuppressLint("MissingPermission")
+   @SuppressLint("MissingPermission")
     private void getLocation(){
         fusedLocationProviderClient.getLastLocation().addOnCompleteListener(new OnCompleteListener<Location>() {
             @Override
@@ -70,6 +70,7 @@ public class MapsActivity extends AppCompatActivity {
                         );
 
                         Toast.makeText(getApplicationContext(), "Latitude" + addresses.get(0).getAddressLine(0)  , Toast.LENGTH_LONG).show();
+                        Log.d("mapstag", addresses.get(0).getAddressLine(0));
                     } catch (IOException e) {
                         e.printStackTrace();
                     }

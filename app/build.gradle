@@ -22,6 +22,23 @@ android {
 }
 
 dependencies {
+    def nav_version = "2.3.1"
+    // Java language implementation
+    implementation "androidx.navigation:navigation-fragment:$nav_version"
+    implementation "androidx.navigation:navigation-ui:$nav_version"
+
+    // Kotlin
+    implementation "androidx.navigation:navigation-fragment-ktx:$nav_version"
+    implementation "androidx.navigation:navigation-ui-ktx:$nav_version"
+
+    // Feature module Support
+    implementation "androidx.navigation:navigation-dynamic-features-fragment:$nav_version"
+
+    // Testing Navigation
+    androidTestImplementation "androidx.navigation:navigation-testing:$nav_version"
+
+    // Jetpack Compose Integration
+    implementation "androidx.navigation:navigation-compose:1.0.0-alpha02"
     implementation fileTree(dir: "libs", include: ["*.jar"])
     //implementation 'com.google.code.gson:gson:2.8.6'
     implementation 'androidx.appcompat:appcompat:1.1.0'
@@ -35,6 +52,7 @@ dependencies {
     implementation 'com.github.crysxd:shared-firebase-preferences:1.0.1'
     implementation 'androidx.preference:preference:1.1.0'
     implementation files('libs\\YouTubeAndroidPlayerApi.jar')
+
 
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'

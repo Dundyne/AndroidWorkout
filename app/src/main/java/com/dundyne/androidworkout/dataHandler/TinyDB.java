@@ -1,4 +1,4 @@
-package com.dundyne.androidworkout;
+package com.dundyne.androidworkout.dataHandler;
 
 /*
  * Copyright 2014 KC Ochibili

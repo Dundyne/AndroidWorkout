@@ -2,8 +2,6 @@ package com.dundyne.androidworkout;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Context;
-import android.content.SharedPreferences;
 import android.media.MediaPlayer;
 import android.net.Uri;
 import android.os.Bundle;
@@ -13,9 +11,9 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.VideoView;
 
-import java.util.ArrayList;
+import com.dundyne.androidworkout.dataHandler.TinyDB;
 
-import sharefirebasepreferences.crysxd.de.lib.SharedFirebasePreferences;
+import java.util.ArrayList;
 
 public class ExerciseActivity extends AppCompatActivity {
     VideoView videoView;
@@ -72,8 +70,8 @@ public class ExerciseActivity extends AppCompatActivity {
     }
 
     public void printProgress(){
-        if(!tinydb.getListInt("pushup").isEmpty()){
-        ArrayList<Integer> progress = tinydb.getListInt("pushup");
+        if(!tinydb.getListInt("plank").isEmpty()){
+        ArrayList<Integer> progress = tinydb.getListInt("plank");
         testView.setText(progress.toString());
         }
         else {
@@ -82,15 +80,15 @@ public class ExerciseActivity extends AppCompatActivity {
     }
 
     public void saveToSharedPreferences(){
-        if(tinydb.getListInt("pushup").isEmpty()){
+        if(tinydb.getListInt("plank").isEmpty()){
             ArrayList<Integer> progress = new ArrayList<>();
             progress.add(storeTime);
-            tinydb.putListInt("pushup", progress);
+            tinydb.putListInt("plank", progress);
         }
         else {
-            ArrayList<Integer> progress = tinydb.getListInt("pushup");
+            ArrayList<Integer> progress = tinydb.getListInt("plank");
             progress.add(storeTime);
-            tinydb.putListInt("pushup", progress);
+            tinydb.putListInt("plank", progress);
         }
         printProgress();
 
