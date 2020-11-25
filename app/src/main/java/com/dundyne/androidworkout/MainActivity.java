@@ -55,6 +55,10 @@ public class MainActivity extends AppCompatActivity  {
         Intent intent = new Intent(this, MapsActivity.class);
         startActivity(intent);
     }
+    public void InternetActivity(View v){
+        Intent intent = new Intent(this, Internet.class);
+        startActivity(intent);
+    }
 
     public void youtubeActivity(View v){
         Intent intent = new Intent(this, YoutubeActivity.class);
